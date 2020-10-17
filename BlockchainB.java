@@ -243,7 +243,7 @@ public class BlockchainB
         // method to send data to the block
     }
 
-    public void writeToJSON()
+    public static void writeToJSON()
     {
         System.out.println("\n___________In writeToJSON___________\n");
         // console header to inform the user whats executing
@@ -412,6 +412,8 @@ public class BlockchainB
         }
         System.out.println("\nFlag: " + flag + "\nBlock: " + tempCurrentHash + "\nContent: " + tempData + "\nGood Job!\n");
         // print out the results to the console
+
+        writeToJSON();
     }
 }
 
